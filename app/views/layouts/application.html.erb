@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IdssSe</title>
+  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+
+
+  <%= javascript_include_tag "application" %>
+  <script src="http://tympanus.net/Tutorials/ItemSlider/js/modernizr.custom.63321.js"></script>
+   <script src=" http://tympanus.net/Tutorials/ItemSlider/js/jquery.catslider.js"></script>
+  <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrap">
+<div class="container">
+	<div class="row">
+		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
+		<div id="menu" class="span4 offset6">
+			<ul>
+				<li><%= link_to "START", "" %><!-- <div class="headline">Allt inom design och utveckling</div> --></li>
+				<li><%= link_to "VAD VI GÖR", "" %><!-- <div class="headline">Hur vi gör livet enklare för ditt företag</div> --></li>
+				<li><%= link_to "OM OSS", "" %><!-- <div class="headline">Vilka som jobbar här och vad företaget gör</div> --></li>
+				<li><%= link_to "KONTAKT", "" %><!-- div class="headline">Kontakta oss</div> --></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div id="content" class="span12">
+			<%= yield %>
+			<div id="push"></div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="footer">
+      <div class="container">
+        <p class="muted credit">
+        	<div class="ringMenu">
+        		<ul>
+        			<li class="main">
+        				<a href="#main"><%=image_tag "/assets/icons/heart.png" %></a>
+        			</li>
+        			<li class="top">
+        				<a href="#top"><%=image_tag "/assets/icons/twitter.png" %></a>
+        			</li>
+        			<li class="right">
+        				<a href="#right"><%=image_tag "/assets/icons/facebook.png" %></a>
+        			</li>
+        			<li class="bottom">
+        				<a href="#bottom"><%=image_tag "/assets/icons/gplus.png" %></a>
+        			</li>
+        			<li class="left">
+        				<a href="#left"><%=image_tag "/assets/icons/linkedin.png" %></a>
+        			</li>
+        		</ul>
+        		<!-- /.ringMenu --> </div>
+        </p>
+      </div>
+    </div>
+
+</body>
+<script>
+$(function() {
+
+	$( '#mi-slider' ).catslider();
+
+});
+</script>
+</html>
