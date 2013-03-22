@@ -11,6 +11,19 @@
  *= require_self
  *= require_tree .
  */
+ #overlay {
+   height:100%;
+      width:100%;
+      position:fixed;
+      left:0;
+      top:0;
+      z-index:100 !important;
+      background: white;
+      filter: alpha(opacity=75); /* internet explorer */
+    -khtml-opacity: 0.75;      /* khtml, old safari */
+    -moz-opacity: 0.75;       /* mozilla, netscape */
+    opacity: 0.75;           /* fx, safari, opera */
+}
 body {
 	background:#f9f8f7 url('/assets/body_bg.gif') repeat-x;
 	color:grey;
@@ -193,4 +206,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', end
   position: absolute;
   top: 0;
   left: -102px;
+}
+
+a.glow, a.glow:hover, a.glow:focus
+{
+  text-decoration: none;
+  color: #aaf;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
 }

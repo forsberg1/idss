@@ -19,7 +19,16 @@
 $(document).ready(function() {
  $('#content').find('*').css('margin-left', "15px");
 $( '#mi-slider' ).catslider();
+$('#overlay').fadeOut('slow', function(){});
+$('a').click(function(){
+  var url = $(this).attr('href');
 
+  $('#overlay').fadeIn('slow', function(){
+    document.location.href = url;
+  });
+
+  return false;
+});
 
 });
 

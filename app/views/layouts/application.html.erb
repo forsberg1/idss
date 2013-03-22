@@ -14,16 +14,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div style="" id="overlay">
+</div>
 <div id="wrap">
 <div class="container">
 	<div class="row">
 		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
 		<div id="menu" class="span4 offset6">
 			<ul>
-				<li><%= link_to "START", "" %><!-- <div class="headline">Allt inom design och utveckling</div> --></li>
-				<li><%= link_to "VAD VI GÖR", "" %><!-- <div class="headline">Hur vi gör livet enklare för ditt företag</div> --></li>
-				<li><%= link_to "OM OSS", "" %><!-- <div class="headline">Vilka som jobbar här och vad företaget gör</div> --></li>
-				<li><%= link_to "KONTAKT", "" %><!-- div class="headline">Kontakta oss</div> --></li>
+				<li><%= link_to "START", "", class: "glow" %><!-- <div class="headline">Allt inom design och utveckling</div> --></li>
+				<li><%= link_to "VAD VI GÖR", "", class: "glow" %><!-- <div class="headline">Hur vi gör livet enklare för ditt företag</div> --></li>
+				<li><%= link_to "OM OSS", "", class: "glow" %><!-- <div class="headline">Vilka som jobbar här och vad företaget gör</div> --></li>
+				<li><%= link_to "KONTAKT", "", class: "glow" %><!-- div class="headline">Kontakta oss</div> --></li>
 			</ul>
 		</div>
 	</div>
