@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require cufon-yui
 //= require Quicksand_Book_400.font
+//= require turbolinks
 //= require_tree .
 
 $(document).ready(function() {
