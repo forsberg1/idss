@@ -141,7 +141,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#262626', end
   border-radius: 50px;
 }
 .ringMenu ul li a:hover {
-  background: rgba(230,150,20,0.7);
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .ringMenu ul li:not(.main) {
