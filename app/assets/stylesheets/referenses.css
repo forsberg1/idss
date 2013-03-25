@@ -1,0 +1,14 @@
+.item img {
+	width: 230px;
+	height: 230px;
+	-webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.53);
+    -moz-box-shadow:    1px 1px 3px rgba(50, 50, 50, 0.53);
+     box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.53);
+}
+.item {
+	
+
+}
+.img_wrapper {
+	margin-left: -25px;
+}

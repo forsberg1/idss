@@ -1,6 +1,8 @@
 IdssSe::Application.routes.draw do
-  get "home/index"
+  get "referenses/index"
 
+  get "home/index"
+  resources :referenses
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
