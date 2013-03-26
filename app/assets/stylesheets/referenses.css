@@ -1,6 +1,7 @@
 .item img {
-	width: 230px;
-	height: 230px;
+	width: 200px;
+	height: 200px;
+	border: 1px solid white;
 	-webkit-box-shadow: 1px 1px 3px rgba(50, 50, 50, 0.53);
     -moz-box-shadow:    1px 1px 3px rgba(50, 50, 50, 0.53);
      box-shadow:         1px 1px 3px rgba(50, 50, 50, 0.53);

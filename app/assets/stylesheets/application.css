@@ -21,6 +21,15 @@ src: url('sourcesanspro-regular-webfont?#iefix') format('embedded-opentype'),
 font-weight: normal;
 font-style: normal;
 }
+@font-face {
+font-family: 'opensans-light';
+src: url('opensans-light-webfont.eot');
+src: url('opensans-light-webfont?#iefix') format('embedded-opentype'),
+     url('opensans-light-webfont.woff') format('woff'),
+     url('opensans-light-webfont.ttf') format('truetype'),
+     url('opensans-light-webfont.svg#colab') format('svg');
+
+}
  .bwWrapper {
     position:relative;
     display:block;
@@ -45,8 +54,10 @@ body {
 	overflow-x: hidden;
 }
  h1 {
- font-family: "sourcesanspro";
- font-size: 25px;
+ font-family: "opensans-light";
+ font-size: 27px;
+ text-transform: uppercase;
+ color: black;
  }
  /* Wrapper for page content to push down footer */
       #wrap {
@@ -83,6 +94,7 @@ div#content {
 	margin-left: 8px;
 	position: relative;
 	width: 983px;
+  margin-bottom: 150px;
 	
 	
 }

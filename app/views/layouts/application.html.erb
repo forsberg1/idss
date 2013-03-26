@@ -14,7 +14,10 @@
 </head>
 <body>
 <div style="" id="overlay">
-  <div class="span5 offset8" style="margin-top: 300px; display: table-cell; vertical-align: middle; text-align: center;"> <%= image_tag("359.gif",width: "50") %></div>
+  <div class="span5 offset8" style="margin-top: 300px; display: table-cell; vertical-align: middle; text-align: center;"> 
+    <%= image_tag("idss_logo.png") %>
+    <%= image_tag("359.gif",width: "50") %>
+  </div>
 </div>
 <div id="wrap">
 <div class="container">
@@ -32,7 +35,7 @@
 	</div>
 	
 	<div class="row">
-		<div id="content" class="span12">
+		<div id="content" class="container">
 			<%= yield %>
 			<div id="push"></div>
 		</div>
