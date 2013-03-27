@@ -30,23 +30,33 @@ src: url('opensans-light-webfont?#iefix') format('embedded-opentype'),
      url('opensans-light-webfont.svg#colab') format('svg');
 
 }
+@font-face {
+font-family: 'proximanova-light';
+src: url('proximanova-light-webfont.eot');
+src: url('proximanova-light-webfont?#iefix') format('embedded-opentype'),
+     url('proximanova-light-webfont.woff') format('woff'),
+     url('proximanova-light-webfont.ttf') format('truetype'),
+     url('proximanova-light-webfont.svg#colab') format('svg');
+
+}
+
  .bwWrapper {
     position:relative;
     display:block;
 }
  #overlay {
-   height:100%;
-      width:100%;
-      position:fixed;
-      left:0;
-      top:0;
-      text-align: center;
-      z-index:100 !important;
-      background: black;
-      filter: alpha(opacity=75); /* internet explorer */
-    -khtml-opacity: 0.75;      /* khtml, old safari */
-    -moz-opacity: 0.75;       /* mozilla, netscape */
-    opacity: 0.75;           /* fx, safari, opera */
+  height:100%;
+  width:100%;
+  position:fixed;
+  left:0;
+  top:0;
+  text-align: center;
+  z-index:100 !important;
+  background: black;
+  filter: alpha(opacity=75); /* internet explorer */
+  -khtml-opacity: 0.75;      /* khtml, old safari */
+  -moz-opacity: 0.75;       /* mozilla, netscape */
+  opacity: 0.75;           /* fx, safari, opera */
 }
 body {
 	background:#f9f8f7 url('/assets/body_bg.gif') repeat-x;
@@ -54,9 +64,9 @@ body {
 	overflow-x: hidden;
 }
  h1 {
- font-family: "opensans-light";
- font-size: 27px;
- text-transform: uppercase;
+ font-family: "proximanova-light";
+ font-size: 30px;
+
  color: black;
  }
  /* Wrapper for page content to push down footer */
@@ -119,10 +129,10 @@ div#highlight {
 	margin-left: 10px;
 }
 #menu ul li a {
-	font-family: Calibri, Arial; 
+font-family: "opensans-light";
 	color: #858585;
 	font-weight: normal;
-	font-size: 14px;
+	font-size: 12px;
 }
 #menu ul li a:hover {
  text-decoration: none;color:black;

@@ -22,7 +22,7 @@ $(document).ready(function() {
 	// Black and white
 
 	$('#content').find('*').css('margin-left', "15px");
-	$('#overlay').fadeOut('slow', function(){});
+	//$('#overlay').fadeOut('slow', function(){});
 	$('a').click(function(){
 	  var url = $(this).attr('href');
 
