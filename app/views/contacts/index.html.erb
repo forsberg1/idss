@@ -12,10 +12,10 @@
 <div id="content_under">
   <div style="margin-top: 30px;" class="container">
    <div style="margin-left: 43px;" id="description" class="span12">
-	<%= form_tag do %>
-		<%= text_field_tag "name", nil,  class: "big", placeholder: "Namn", required: true %><br/>
-		<%= text_field_tag "email", nil,  class: "big", placeholder: "E-postadress", required: true %><br/>
-		<%= text_area_tag  "message", nil,  class: "big", placeholder: "Meddelande" %><br/>
+	<%= form_tag contacts_path do %>
+		<%= text_field_tag "contact[name]", nil,  class: "big", placeholder: "Namn", required: true %><br/>
+		<%= text_field_tag "contact[email]", nil,  class: "big", placeholder: "E-postadress", required: true %><br/>
+		<%= text_area_tag  "contact[message]", nil,  class: "big", placeholder: "Meddelande" %><br/>
 		<%= submit_tag  "Skicka", class: "btn" %><br/>
 	<% end %>
 	</div>
