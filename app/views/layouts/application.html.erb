@@ -1,8 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- Rean's note: if you're wondering what are these items below, you should follow the link below -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <!--<![endif]-->
+
+  <!-- Set the viewport width to device width for mobile -->
+
+
+  <!-- Included CSS Files -->
+
+  <!--[if lt IE 9]>
+          <link rel="stylesheet" href="stylesheets/ie.css">
+  <![endif]--><script type="text/javascript" src="javascripts/modernizr.foundation.js"></script>
+
+  <!-- IE Fix for HTML5 Tags -->
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
   <title>Köp hemsida med alltid garanterat unik design av oss på idss</title>
-  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+ <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", :media => "all" %>
 
@@ -15,59 +38,82 @@
 </head>
 <body>
 <div style="display: none;" id="overlay">
-  <div class="span5 offset8" style="margin-top: 300px; display: table-cell; vertical-align: middle; text-align: center;"> 
+  <div class="container">
+  <div class="" style="position: relative; top: 300px; margin-left: 0px;"> 
     <%= image_tag("idss_logo.png") %>
     <%= image_tag("359.gif",width: "50") %>
   </div>
 </div>
-<div id="wrap">
+</div>
 <div class="container">
 	<div class="row">
 		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
-		<div id="menu" class="span4 offset6">
-			<ul>
-				<li><%= link_to "START", root_path, class: "glow" %><!-- <div class="headline">Allt inom design och utveckling</div> --></li>
-        <li><%= link_to "REFERSENSER",  referenses_path , class: "glow" %><!-- <div class="headline">Allt inom design och utveckling</div> --></li>
-				<li><%= link_to "VAD VI GÖR", "", class: "glow" %><!-- <div class="headline">Hur vi gör livet enklare för ditt företag</div> --></li>
-				<li><%= link_to "OM OSS", "", class: "glow" %><!-- <div class="headline">Vilka som jobbar här och vad företaget gör</div> --></li>
-				<li><%= link_to "KONTAKT", "", class: "glow" %><!-- div class="headline">Kontakta oss</div> --></li>
-			</ul>
+		<div id="menu" class="ph-dot-nav nav">
+			<%= link_to "HEM", root_path %>
+      <%= link_to "OM IDSS", root_path %>
+      <%= link_to "VÅRA TJÄNSTER", root_path %>
+      <%= link_to "KONTAKT", contacts_path %>
+    <div class="effect"></div>
 		</div>
 	</div>
 	
-	<div class="row">
-		<div id="content" class="container">
-			<%= yield %>
-			<div id="push"></div>
-		</div>
-	</div>
-</div>
-</div>
+	
+ <%= yield %>
 <div id="footer">
-      <div class="container">
-        <p class="muted credit">
-        	<div class="ringMenu">
-        		<ul>
-        			<li class="main">
-        				<a href="#main"><%=image_tag "/assets/icons/heart.png" %></a>
-        			</li>
-        			<li class="top">
-        				<a href="#top"><%=image_tag "/assets/icons/twitter.png" %></a>
-        			</li>
-        			<li class="right">
-        				<a href="#right"><%=image_tag "/assets/icons/facebook.png" %></a>
-        			</li>
-        			<li class="bottom">
-        				<a href="#bottom"><%=image_tag "/assets/icons/gplus.png" %></a>
-        			</li>
-        			<li class="left">
-        				<a href="#left"><%=image_tag "/assets/icons/linkedin.png" %></a>
-        			</li>
-        		</ul>
-        		<!-- /.ringMenu --> </div>
-        </p>
-      </div>
+  <div class="container">
+
+    <p class="muted credit">
+      <div id="buisness" class="span2">
+        <h4 class="footer">Kontakt</h4>
+        <p>idss-design.se</p>
+        <p>info@idss-design.se</p>
+        <p>Direkt: 0470-12010</p>
+        <!-- <dichrv class="ringMenu">
+          <ul>
+            <li class="main">
+              <a href="#main">
+                <%=image_tag "/assets/icons/heart.png" %></a>
+            </li>
+            <li class="top">
+              <a href="#top">
+                <%=image_tag "/assets/icons/twitter.png" %></a>
+            </li>
+            <li class="right">
+              <a href="#right">
+                <%=image_tag "/assets/icons/facebook.png" %></a>
+            </li>
+            <li class="bottom">
+              <a href="#bottom">
+                <%=image_tag "/assets/icons/gplus.png" %></a>
+            </li>
+            <li class="left">
+              <a href="#left">
+                <%=image_tag "/assets/icons/linkedin.png" %></a>
+            </li>
+          </ul>
+          </dichrv> -->
+          <!-- /.ringMenu --> 
+        </div>
+        <div style="line-height: 10px;" class="span2 offset1">
+        <h4 class="footer">Byrån</h4>
+        <p><%= link_to "Nya jobb", "" %></p>
+        <p><%= link_to "kontakta oss", "" %></p>
+        
+        </div>
+        <div style="line-height: 10px;" class="span4 offset1">
+        <h4 class="footer">Socialt</h4>
+        <span id="socials">
+          <div class="icons"><%= image_tag "/assets/icons/facebook.png" %></div>
+          <div class="icons"><%= image_tag "/assets/icons/twitter.png" %></div>
+        </div>
+        </div>
+        <!-- <div class="seperatorTop"></div>
+        <div class="seperatorBottom"></div> -->
+      </p>
     </div>
+  </div>
+        	
+
 
 </body>
 

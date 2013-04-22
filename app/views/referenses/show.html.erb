@@ -1,0 +1,41 @@
+<div class="row">
+	<% if params[:referens] == "ana" %>
+	<div id="content" class="container">
+        <div class="span12">
+        	<h1 style="text-align:center;" class="tlt">ANA BEDDING AB</h1>
+        </div> 
+        <div class="span8 offset2"><%= image_tag("ana.png") %></div>
+	</div>
+	<% end %>
+</div>
+</div> <!-- END CONTAINER IN APPLICATION -->
+<div id="content_under">
+  <div style="margin-top: 30px;" class="container">
+   <div id="description" class="span12">
+	<% if params[:referens] == "ana" %>
+	<div class="span3">
+		<p><i class="icon-ok"></i> Unik design</p>
+		<p><i class="icon-ok"></i> Produktkatalog</p>
+		<p><i class="icon-ok"></i> Uppdateringsverktyg</p>
+		<p><i class="icon-ok"></i> Webbshop</p>
+		<p><i class="icon-ok"></i> Betalningslösning</p>
+		<p><i class="icon-ok"></i> Mina sidor</p>
+		<p><i class="icon-ok"></i> HTML 5 och CSS3</p>
+		<p><i class="icon-ok"></i> Bildredigering</p>
+	</div>
+	<div class="span4">
+		<p>ANA BEDDIGN AB är ett sängföretag i småland som tillverkar egna sängar.</p>
+		<p>Vi fick i uppdrag att skapa en helt ny plattform och en helt ny unik design.</p>
+        <p><i class="icon-chevron-right"></i> <%= link_to "Till hemsidan", "http://www.ana.se" %></p>
+	</div>
+	<div class="span4">
+		<blockquote>
+		  <p>Utvecklare Joakim kommenterar</p>
+		  <small>ANA BEDDING var mycket roligt att jobba med. Eftersom dom har så mycket artiklar och olika komponenter så var det en utmaning att få allt på plats men i slutändan är vi mycket nöjda med allt ifrån design till plattform. </small>
+		</blockquote>
+	</div>
+	<% end %>
+	</div>
+    <div id="push"></div>
+  </div>
+</div>

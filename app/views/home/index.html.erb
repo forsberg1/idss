@@ -1,58 +1,55 @@
-<div id="hero" class="row">
-	<%= image_tag "hero1.png" %>
-	<!-- <div id="st_main" class="st_main">
-			<img src="images/album/1.jpg" alt="" class="st_preview" style="display:none;"/>
-			<div class="st_overlay"></div>
-			<ul id="st_nav" class="st_navigation">
-				<li class="album">
-					<div class="st_wrapper st_thumbs_wrapper">
-						<div class="st_thumbs">
-							<img src="/assets/ana.png" width="300" alt="images/album/1.jpg"/>
-							<img src="/assets/domainstore.png" width="230" alt="images/album/1.jpg"/>
-							<img src="/assets/ventbed.png" width="180" alt="images/album/1.jpg"/>
-							<img src="/assets/foldbed.png" width="250" alt="images/album/1.jpg"/>
-							
-						</div>
+<div class="row">
+		<div id="content" class="container">
+          <div id="hero">
+
+            <div class="flexislider span12">
+              <ul class="slides">
+                <li>
+                  <%= image_tag "hero2.png" %></li>
+                <li style="">
+                  <%= link_to (image_tag "hero1.png"), referens_path("ana") %></li>
+
+              </ul>
+            </div>
+          </div>
+			<div id="push"></div>
+		</div>
+</div>
+</div> <!-- END CONTAINER IN APPLICATION -->
+<div id="content_under">
+  <div class="container">
+   <div id="description" class="span12">
+	
+	<div class="fmcircle_out">
+			<a href="#branding">
+				<div class="fmcircle_border">
+					<div class="fmcircle_in fmcircle_dark">
+						<span>Design</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/design.png" alt="" />
 					</div>
-				</li>
-				
-			</ul>
-		</div> -->
-	 <!-- <figure class="a animate">
-	 	<figcaption>
-	 	</figcaption>
-	 </figure>
-	 <figure class="b animate">
-	 	<figcaption >
-	 	
-	 	</figcaption>
-	 </figure>
-	 <figure class="c animate">
-	 	<figcaption>
-	 		
-	 	</figcaption>
-	 </figure>
-	  <figure class="d">
-	 	<figcaption>
-	 		
-	 	</figcaption>
-	 </figure> -->
+				</div>
+			</a>
+	</div>
+	<div class="fmcircle_out">
+			<a href="#branding">
+				<div class="fmcircle_border">
+					<div class="fmcircle_in fmcircle_dark">
+						<span>Utveckling</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/develop.png" alt="" />
+					</div>
+				</div>
+			</a>
+	</div>
+	<div class="fmcircle_out">
+			<a href="#branding">
+				<div class="fmcircle_border">
+					<div class="fmcircle_in fmcircle_dark">
+						<span>Byrån</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/develop.png" alt="" />
+					</div>
+				</div>
+			</a>
+	</div>
+	</div>
+    <div id="push"></div>
+  </div>
 </div>
-<div id="description" class="row">
-	<div class="span4 description-item">
-	<h1 style="font-size: 27px;">Köpa hemsida av idss</h1>
-		<p>Vi finns i hjärtat av småland, därav småländska priser.</p>
-		<p>Tveka inte att kontakta oss för prisuppgifter och vad vi kan göra för just ditt företag.</p>
-		<p style="position:relative; left: -15px;"><%= link_to "Kontakta oss", "#" %> </p>
-	</div>	
-	<div class="span4 description-item">
-	<h1 style="font-size: 27px;">Flexibla i det vi gör</h1>
-		<p>idss är väldigt flexibla, vi har mycket kunskap om webben. Oavsett var din platform idag ligger på för webspråk kan vi lösa det.</p>
-		<p style="position:relative; left: -15px;"><%= link_to "Läs mer om oss", "#" %> </p>
-	</div>	
-	<div class="span4 description-item">
-	<h1 style="font-size: 25px;">Vi "leker med webben"</h1>
-		<p>Alla våra arbetare är ständigt uppdaterade med de "nya" teknikerna på så sätt kan vi alltid skapa nytänkande ideer.</p>
-		<p>När vi har tid över "leker vi gärna med webben" för att hålla oss uppdaterade om vad som händer.</p>
-	</div>	
-</div>
+
+
