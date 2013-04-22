@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'active_link_to'
+gem 'lorem-ipsum-me'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

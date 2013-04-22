@@ -1,4 +1,6 @@
 IdssSe::Application.routes.draw do
+  get "about_us/index"
+
   get "contacts/index"
 
   get "contacs/index"
@@ -9,6 +11,7 @@ IdssSe::Application.routes.draw do
 
   get "home/index"
   resources :referenses, :what_we_do, :contacts
+  resource :about_us
 
   get '/vad_vi_gor' => "what_we_do#index", as: :vad_vi_gor
   match "/referenser/:referens/" => "referenses#show", as: :referens

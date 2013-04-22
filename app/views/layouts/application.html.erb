@@ -49,10 +49,10 @@
 	<div class="row">
 		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
 		<div id="menu" class="ph-dot-nav nav">
-			<%= link_to "HEM", root_path %>
-      <%= link_to "OM IDSS", root_path %>
-      <%= link_to "VÅRA TJÄNSTER", root_path %>
-      <%= link_to "KONTAKT", contacts_path %>
+			<%= active_link_to "HEM", root_path %>
+      <%= active_link_to "OM IDSS", root_path %>
+      <%= active_link_to "VÅRA TJÄNSTER", root_path %>
+      <%= active_link_to "KONTAKT", contacts_path %>
     <div class="effect"></div>
 		</div>
 	</div>
@@ -96,8 +96,8 @@
         </div>
         <div style="line-height: 10px;" class="span2 offset1">
         <h4 class="footer">Byrån</h4>
-        <p><%= link_to "Nya jobb", "" %></p>
-        <p><%= link_to "kontakta oss", "" %></p>
+        <p><%= active_link_to "Nya jobb", "" %></p>
+        <p><%= active_link_to "kontakta oss", contacts_path %></p>
         
         </div>
         <div style="line-height: 10px;" class="span4 offset1">

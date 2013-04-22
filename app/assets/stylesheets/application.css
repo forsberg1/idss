@@ -40,7 +40,16 @@ src: url('proximanova-light-webfont?#iefix') format('embedded-opentype'),
      url('proximanova-light-webfont.svg#colab') format('svg');
 
 }
-
+input.big[type="text"] {
+  width: 350px;
+  height: 35px;
+  border-radius: none;
+}
+textarea.big {
+  width: 350px;
+  height: 125px;
+  border-radius: none;
+}
  .bwWrapper {
     position:relative;
     display:block;
