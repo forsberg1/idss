@@ -40,8 +40,7 @@
 <div style="display: none;" id="overlay">
   <div class="container">
   <div class="" style="position: relative; top: 300px; margin-left: 0px;"> 
-    <%= image_tag("idss_logo.png") %>
-    <%= image_tag("359.gif",width: "50") %>
+    <h2 class="brand">idss-design.se <%= image_tag("359.gif",width: "50") %> </h2>
   </div>
 </div>
 </div>
@@ -50,13 +49,12 @@
 		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
 		<div id="menu" class="ph-dot-nav nav">
 			<%= active_link_to "HEM", root_path %>
-      <%= active_link_to "OM IDSS", root_path %>
-      <%= active_link_to "VÅRA TJÄNSTER", root_path %>
+      <%= active_link_to "OM IDSS", about_us_path %>
+      <%= active_link_to "VÅRA TJÄNSTER", what_we_do_path %>
       <%= active_link_to "KONTAKT", contacts_path %>
     <div class="effect"></div>
 		</div>
 	</div>
-	
 	
  <%= yield %>
 <div id="footer">
@@ -102,7 +100,7 @@
         </div>
         <div style="line-height: 10px;" class="span4 offset1">
         <h4 class="footer">Socialt</h4>
-        <span id="socials">
+        <div id="socials">
           <div class="icons"><%= image_tag "/assets/icons/facebook.png" %></div>
           <div class="icons"><%= image_tag "/assets/icons/twitter.png" %></div>
         </div>

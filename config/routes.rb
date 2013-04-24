@@ -10,10 +10,12 @@ IdssSe::Application.routes.draw do
   get "referenses/index"
 
   get "home/index"
-  resources :referenses, :what_we_do, :contacts
-  resource :about_us
+  resources :referenses, :what_we_do, :contacts, :about_us
 
-  get '/vad_vi_gor' => "what_we_do#index", as: :vad_vi_gor
+  get '/vara-tjanster' => "what_we_do#index", as: :what_we_do
+  get '/om-oss' => "about_us#index", as: :about_us
+  get '/kontakta-oss' => "contacts#index", as: :contacts
+  post '/kontakta-oss' => "contacts#create", as: :contacts
   match "/referenser/:referens/" => "referenses#show", as: :referens
   # The priority is based upon order of creation:
   # first created -> highest priority.

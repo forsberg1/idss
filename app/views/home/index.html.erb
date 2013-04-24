@@ -4,11 +4,9 @@
 
             <div class="flexislider span12">
               <ul class="slides">
-                <li>
-                  <%= link_to (image_tag "hero2.png"), contacts_path %></li>
-                <li style="">
-                  <%= link_to (image_tag "hero1.png"), referens_path("ana") %></li>
-
+                <li><%= link_to (image_tag "hero2.png"), contacts_path %></li>
+                <li style=""><%= link_to (image_tag "hero1.png"), referens_path("ana") %></li>
+				<li style=""><%= link_to (image_tag "hero3.jpg"), referens_path("domainstore") %></li>
               </ul>
             </div>
           </div>
@@ -21,31 +19,31 @@
    <div id="description" class="span12">
 	
 	<div class="fmcircle_out">
-			<a href="#branding">
+			<%= link_to what_we_do_path do %>
 				<div class="fmcircle_border">
 					<div class="fmcircle_in fmcircle_dark">
 						<span>Design</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/design.png" alt="" />
 					</div>
 				</div>
-			</a>
+			<% end %>
 	</div>
 	<div class="fmcircle_out">
-			<a href="#branding">
+			<%= link_to what_we_do_path do %>
 				<div class="fmcircle_border">
 					<div class="fmcircle_in fmcircle_dark">
 						<span>Utveckling</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/develop.png" alt="" />
 					</div>
 				</div>
-			</a>
+			<% end %>
 	</div>
 	<div class="fmcircle_out">
-			<a href="#branding">
+			<%= link_to about_us_path do %>
 				<div class="fmcircle_border">
 					<div class="fmcircle_in fmcircle_dark">
 						<span>Byrån</span><img src="https://dl.dropbox.com/u/65958930/uploads/cssdeck/develop.png" alt="" />
 					</div>
 				</div>
-			</a>
+			<% end %>
 	</div>
 	</div>
     <div id="push"></div>

@@ -6,11 +6,18 @@
         </div> 
         <div class="span8 offset2"><%= image_tag("ana.png") %></div>
 	</div>
+	<% elsif params[:referens] == "domainstore" %>
+	<div id="content" class="container">
+        <div class="span12">
+        	<h1 style="text-align:center;" class="tlt">DOMAINSTORE.SE</h1>
+        </div> 
+        <div class="span8 offset2"><%= image_tag("domainstore.png") %></div>
+	</div>
 	<% end %>
 </div>
 </div> <!-- END CONTAINER IN APPLICATION -->
-<div id="content_under">
-  <div style="margin-top: 30px;" class="container">
+<div  id="content_under">
+  <div  style="margin-top: 30px; margin-left: 160px;" class="container">
    <div id="description" class="span12">
 	<% if params[:referens] == "ana" %>
 	<div class="span3">
@@ -32,6 +39,26 @@
 		<blockquote>
 		  <p>Utvecklare Joakim kommenterar</p>
 		  <small>ANA BEDDING var mycket roligt att jobba med. Eftersom dom har så mycket artiklar och olika komponenter så var det en utmaning att få allt på plats men i slutändan är vi mycket nöjda med allt ifrån design till plattform. </small>
+		</blockquote>
+	</div>
+	<% elsif params[:referens] == "domainstore" %>
+	<div class="span3">
+		<p><i class="icon-ok"></i> Unik design</p>
+		<p><i class="icon-ok"></i> Produktkatalog</p>
+		<p><i class="icon-ok"></i> Uppdateringsverktyg</p>
+		<p><i class="icon-ok"></i> Bakgrundsjobb</p>
+		<p><i class="icon-ok"></i> Betalningslösning</p>
+		<p><i class="icon-ok"></i> Kundsidor</p>
+		<p><i class="icon-ok"></i> HTML 5 och CSS3</p>
+	</div>
+	<div class="span4">
+		<p>domainstore.se är en auktionsida som auktionerar ut domäner till ett bra pris.</p>
+        <p><i class="icon-chevron-right"></i> <%= link_to "Till hemsidan", "http://www.domainstore.se" %></p>
+	</div>
+	<div class="span4">
+		<blockquote>
+		  <p>Utvecklare Joakim kommenterar</p>
+		   <small>Mycket roligt projekt att jobba med, byggt med ruby on rails för absolut bästa stabilitet.</small>
 		</blockquote>
 	</div>
 	<% end %>
