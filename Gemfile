@@ -25,6 +25,7 @@ gem 'turbolinks'
 gem 'active_link_to'
 gem 'lorem-ipsum-me'
 gem "font-awesome-rails"
+gem 'meta-tags', :require => 'meta_tags'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

@@ -4,9 +4,35 @@
 
             <div class="flexislider span12">
               <ul class="slides">
-                <li><%= link_to (image_tag "hero2.png"), contacts_path %></li>
-                <li style=""><%= link_to (image_tag "hero1.png"), referens_path("ana") %></li>
-				<li style=""><%= link_to (image_tag "hero3.jpg"), referens_path("domainstore") %></li>
+              	<!--   <li style=""><%= link_to (image_tag "hero1.png"), referens_path("ana") %></li>
+                <li><%= link_to (image_tag "hero2.png"), contacts_path %></li> -->
+           		<li style="">
+					<div class="hero-item">
+						<h1 class="normal uppercase">ANA BEDDING AB </h1>
+						<p><%= link_to "www.ana.se", "http://www.ana.se" %></p>
+						<p>Idss fick i uppdrag att utveckla en helt ny unik design till ana beddings nya hemsida. Vi bytte också hela plattformen och resultatet blir en levande hemsida med många olika färger.</p>
+						<p><%= link_to "Läs mer om ana här", referens_path("ana") %></p>
+					</div>
+					<%= link_to (image_tag "hero1.png"), referens_path("ana") %>
+				</li>
+				<li style="">
+					<div class="hero-item">
+						<h1 class="normal uppercase">ANAHOTELL</h1>
+						<p><%= link_to "www.anahotell.se", "http://www.hotellsängar.se" %></p>
+						<p>Eftersom ana blev så nöjda med hemsidan fick vi också göras deras hotellhemsida. Sidan är helt responsiv.</p>
+						<p><%= link_to "Läs mer om anahotell här", referens_path("anahotell") %></p>
+					</div>
+					<%= link_to (image_tag "anahotell.png"), referens_path("anahotell") %>
+				</li>
+				<li style="">
+					<div class="hero-item">
+						<h1 class="normal uppercase">Domainstore</h1>
+						<p><%= link_to "www.domainstore.se", "http://www.domainstore.se" %></p>
+						<p>Idss fick i uppdrag att utveckla en auktionsida för domainstore.se. Kunderna ska kunna lägga bud på domäner och den som har sista budet vinner således domänen.</p>
+						<p><%= link_to "Läs mer om domainstore.se här", referens_path("domainstore") %></p>
+					</div>
+					<%= link_to (image_tag "hero3.png"), referens_path("domainstore") %>
+				</li>
               </ul>
             </div>
           </div>

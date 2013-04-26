@@ -29,17 +29,23 @@ $(document).ready(function() {
   	});
 	//$('#content').find('*').css('margin-left', "15px");
 	//$('#overlay').fadeOut('slow', function(){});
-	$('a').click(function(){
+	$('a')	.click(function(){
 	  var url = $(this).attr('href');
 
-	  $('#overlay').fadeIn('slow', function(){
+	  $('#overlay').fadeIn('fast', function(){
 	    document.location.href = url;
 	  });
 
 	  return false;
 	});
 
-
+	$("#brand").mouseover(function() {
+     //$('#home').fadeToggle("slow")
+     return false;
+ 	 }).mouseout(function(){
+    	//$('#home').fadeOut("slow")
+    	return false;
+  	});
 });
 
 

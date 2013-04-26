@@ -22,7 +22,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <title>Köp hemsida med alltid garanterat unik design av oss på idss</title>
+ <%= display_meta_tags :site => 'IDSS - En webbyrå i småland' %>
  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet"> -->
@@ -46,7 +46,7 @@
 </div>
 <div class="container">
 	<div class="row">
-		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %></div>
+		<div id="brand" class="span4"><%= link_to (image_tag("logo.png")), root_path  %> <div id="home" style="display: none; margin-top: -70px; margin-left: 180px; position:relative;"><i style="font-size: 30px; color: black;" class="icon-home"></i></div></div>
 		<div id="menu" class="ph-dot-nav nav">
 			<%= active_link_to "HEM", root_path %>
       <%= active_link_to "OM IDSS", about_us_path %>
@@ -94,14 +94,14 @@
         </div>
         <div style="line-height: 10px;" class="span2 offset1">
         <h4 class="footer">Byrån</h4>
-        <p><%= active_link_to "Nya jobb", "" %></p>
+        <p><%= active_link_to "Nya jobb", jobs_path %></p>
         <p><%= active_link_to "kontakta oss", contacts_path %></p>
         
         </div>
         <div style="line-height: 10px;" class="span4 offset1">
         <h4 class="footer">Socialt</h4>
         <div id="socials">
-          <div class="icons"><%= image_tag "/assets/icons/facebook.png" %></div>
+          <div class="icons"><%= link_to (image_tag "/assets/icons/facebook.png"), "https://www.facebook.com/IdssDesign" %></div>
           <div class="icons"><%= image_tag "/assets/icons/twitter.png" %></div>
         </div>
         </div>

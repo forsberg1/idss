@@ -10,8 +10,15 @@ div#hero {
 	position: relative;
 	border-radius: 3px;
 
-	top: -20px;
+	top: -30px;
     margin-bottom: 0px;
+}
+.hero-item {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 380px;
+  z-index: 999;
 }
 #hero-1 {
 	position:relative;

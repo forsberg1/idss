@@ -1,4 +1,6 @@
 IdssSe::Application.routes.draw do
+  get "jobs/index"
+
   get "about_us/index"
 
   get "contacts/index"
@@ -10,11 +12,12 @@ IdssSe::Application.routes.draw do
   get "referenses/index"
 
   get "home/index"
-  resources :referenses, :what_we_do, :contacts, :about_us
+  resources :referenses, :what_we_do, :contacts, :about_us, :jobs
 
   get '/vara-tjanster' => "what_we_do#index", as: :what_we_do
   get '/om-oss' => "about_us#index", as: :about_us
   get '/kontakta-oss' => "contacts#index", as: :contacts
+  get '/jobba-hos-oss' => "jobs#index", as: :jobs
   post '/kontakta-oss' => "contacts#create", as: :contacts
   match "/referenser/:referens/" => "referenses#show", as: :referens
   # The priority is based upon order of creation:

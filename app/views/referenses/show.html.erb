@@ -13,6 +13,13 @@
         </div> 
         <div class="span8 offset2"><%= image_tag("domainstore.png") %></div>
 	</div>
+	<% elsif params[:referens] == "anahotell" %>
+	<div id="content" class="container">
+        <div class="span12">
+        	<h1 style="text-align:center;" class="tlt">ANAHOTELL.SE</h1>
+        </div> 
+        <div class="span8 offset2"><%= image_tag("anahotell_referens.png") %></div>
+	</div>
 	<% end %>
 </div>
 </div> <!-- END CONTAINER IN APPLICATION -->
@@ -59,6 +66,23 @@
 		<blockquote>
 		  <p>Utvecklare Joakim kommenterar</p>
 		   <small>Mycket roligt projekt att jobba med, byggt med ruby on rails för absolut bästa stabilitet.</small>
+		</blockquote>
+	</div>
+	<% elsif params[:referens] == "anahotell" %>
+	<div class="span3">
+		<p><i class="icon-ok"></i> Unik design</p>
+		<p><i class="icon-ok"></i> Responsiv design</p>
+		<p><i class="icon-ok"></i> Uppdateringsverktyg</p>
+		<p><i class="icon-ok"></i> HTML 5 och CSS3</p>
+	</div>
+	<div class="span4">
+		<p>anahotell.se säljer hotellsängar till hotellkunder.</p>
+        <p><i class="icon-chevron-right"></i> <%= link_to "Till hemsidan", "http://www.anahotell.se" %></p>
+	</div>
+	<div class="span4">
+		<blockquote>
+		  <p>Utvecklare Joakim kommenterar</p>
+		   <small>Eftersom vi gjorde ana.se fick vi också i uppgift att göra anahotell.se. Sidan är helt responsiv.</small>
 		</blockquote>
 	</div>
 	<% end %>
